@@ -6,7 +6,7 @@ You should run setup_multiple_remotes bash file ONLY ONCE when you git cloned yo
 As before, make the script executable (chmod +x setup_multiple_remotes.sh) and then run it:
 
 ```bash
-./setup_multiple_remotes.sh https://learn.01founders.co/git/ababa/groupie-tracker-search-bar.git
+./setup_multiple_remotes.sh https://learn.01founders.co/git/USERNAME/PROJECT_NAME.git
 ```
 
 When you need to push it you can use this command.
