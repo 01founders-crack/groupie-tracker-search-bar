@@ -6,19 +6,15 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-# Step 1: Change to the project directory
-# Replace '/path/to/your/project' with the absolute path of your local Git project
-cd /path/to/your/project
-
-# Step 2: List existing remotes for validation
+# Step 1: List existing remotes for validation
 echo "Existing remotes:"
 git remote -v
 
-# Step 3: Add a new remote repository
+# Step 2: Add a new remote repository
 # Use the provided URL as the second remote repository's URL
 git remote add second-remote $1
 
-# Step 4: Confirm that the new remote has been added
+# Step 3: Confirm that the new remote has been added
 echo "Updated remotes:"
 git remote -v
 
