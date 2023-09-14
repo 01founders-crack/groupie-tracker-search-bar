@@ -1,0 +1,62 @@
+{{define "header"}}
+<head>
+  <title>{{template "title" .}}</title>
+  <!-- Essential Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <!-- SEO Meta Tags -->
+  <meta
+    name="description"
+    content="Discover comprehensive information on your favorite artists, albums, and tracks through The Music API."
+  />
+  <meta name="keywords" content="Music, API, Artists, Albums, Tracks" />
+  <meta name="author" content="01founderscrack" />
+
+  <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="{{template "title" .}} - The Music API">
+  <meta
+    property="og:description"
+    content="Discover comprehensive information on your favorite artists, albums, and tracks."
+  />
+  <meta property="og:image" content="/images/01FCLogo.webp" />
+  <meta property="og:url" content="https://localhost" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/images/01FCLogo.ico" type="image/x-icon" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="headerHeader">
+    <nav class="headerNav">
+      <a aria-current="page" aria-label="home page" class="headerLink" href="/">
+        <img
+          src="images/01FCLogo.webp"
+          alt="Logo SVG"
+          width="40"
+          height="40"
+          viewbox="0 0 50 50"
+        />
+      </a>
+      <ul class="headerList">
+        <li>
+          <a
+            class="donateButton"
+            href="https://www.buymeacoffee.com/01founderscrack"
+            title="Donate"
+            aria-label="donate"
+          >
+            <span class="donateElement">Support Us!</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  {{end}}
+</body>

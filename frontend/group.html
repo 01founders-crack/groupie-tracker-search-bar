@@ -1,0 +1,9 @@
+<!-- frontend/group.html -->
+{{define "title"}} ID Template {{end}} {{define "content"}}
+
+<section class="s2ID">
+  <div class="idTitle">
+    <h1>{{.Name}}</h1>
+  </div>
+</section>
+{{template "group_info" .}} {{template "google_maps" .}} {{end}}

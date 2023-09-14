@@ -1,0 +1,24 @@
+{{define "layout"}}
+<!DOCTYPE html>
+<html lang="en">
+ {{template "header" .}}
+    <main class="mainMain">
+      <section class="s1">
+        <h1 class="s1Header">The Music API</h1>
+        <div class="s1img">
+          <img
+            src="images/MusicBG.svg"
+            alt="BG SVG"
+            width="150"
+            height="150"
+            viewbox="0 0 378 376"
+            fill="none"
+          />
+        </div>
+      </section>
+      {{ template "content" . }}
+    </main>
+    {{template "footer" .}}
+  </body>
+</html>
+{{end}}
